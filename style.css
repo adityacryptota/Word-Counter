@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-family: 'Arvo', serif;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    background-color: #222831;
+    color: #eeeeee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+textarea {
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 2px solid black;
+    margin: 2rem 0;
+    font-family: 'Arvo', serif;
+    height: 20rem;
+    width: 90%;
+    
+}
+
+@media only screen and (max-width: 600px) {
+    body {
+        font-size: 1rem;
+    }
+
+    textarea {
+        width: 75%;
+    }
+}
