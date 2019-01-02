@@ -13,10 +13,14 @@ new Vue({
             let capture = this;
 
             collection.forEach(function(word){
-                if(word !== ""){
+
+                if(word !== "" && word.length >= 2 && Number.isNaN(Number(word)) == true){
                    filter.push(word);
                    capture.words = filter.length;
-                }else {
+                } else if(filter.length == 0){
+                    capture.words = 0;
+                }
+                else {
                     filter = filter;
                 }
             });
