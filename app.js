@@ -12,9 +12,11 @@ new Vue({
 
             let capture = this;
 
+            let format = /[a-z]/i;
+
             collection.forEach(function(word){
 
-                if(word !== "" && word.length >= 2 && Number.isNaN(Number(word)) == true){
+                if(word !== "" && word.length >= 2 && Number.isNaN(Number(word)) == true && format.test(word)){
                    filter.push(word);
                    capture.words = filter.length;
                 } else if(filter.length == 0){
