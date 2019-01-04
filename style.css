@@ -8,6 +8,7 @@ body {
     text-transform: uppercase;
     font-family: 'Arvo', serif;
     text-align: center;
+    letter-spacing: 0.2rem;
 }
 
 .container {
@@ -18,6 +19,11 @@ body {
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+small {
+    font-size: 0.8rem;
+    display: block;
 }
 
 textarea {
